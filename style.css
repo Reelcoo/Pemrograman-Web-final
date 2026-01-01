@@ -1,0 +1,42 @@
+*{box-sizing:border-box}
+body{
+  margin:0;font-family:sans-serif;
+  background:linear-gradient(180deg,#071021,#071827 60%);
+  color:#e6f0f2;padding:20px;
+  display:flex;justify-content:center;
+}
+.wrap{max-width:900px;width:100%}
+a{text-decoration:none;color:inherit}
+
+header{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}
+h1,h2{color:#2dd4bf;margin:0}
+nav{display:flex;gap:12px}
+
+section{background:rgba(255,255,255,.05);padding:20px;border-radius:8px;margin-bottom:20px}
+
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.card{height:200px;border-radius:8px;display:flex;align-items:flex-end;
+background-size:cover;background-position:center;overflow:hidden}
+.content{background:rgba(0,0,0,.5);padding:10px;font-size:14px}
+
+input,select,textarea,button{
+  width:100%;padding:8px;margin-top:6px;
+  border:none;border-radius:6px
+}
+input,select,textarea{background:#1a2235;color:#e6f0f2}
+button{cursor:pointer}
+
+.admin-actions{margin-top:8px;display:flex;gap:6px}
+.btn{padding:4px 8px;font-size:12px;border-radius:4px;font-weight:bold}
+.btn-add{background:#22c55e;color:#071021}
+.btn-edit{background:#3b82f6;color:#fff}
+.btn-delete{background:#ef4444;color:#fff}
+
+table{width:100%;border-collapse:collapse;margin-top:15px}
+th,td{padding:10px;border-bottom:1px solid rgba(255,255,255,.1)}
+th{background:#2dd4bf;color:#071021}
+
+.status{padding:4px 8px;border-radius:4px;font-weight:bold}
+.menunggu{background:#facc15;color:#071021}
+.lunas{background:#22c55e;color:#071021}
+.ditolak{background:#ef4444;color:#fff}
